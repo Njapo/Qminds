@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Qminds.Register">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid Margin="20,0,20,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="0">
+                        <Entry Placeholder="Username" FontSize="20" x:Name="EntryUsername"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <Entry Placeholder="Password" IsPassword="True" FontSize="20" x:Name="EntryPassword"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2">
+                        <Entry Placeholder="Email" FontSize="20" x:Name="EntryEmail"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="3">
+                        <Entry Placeholder="PhoneNumber" FontSize="20" x:Name="EntryPhoneNumber" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="4">
+                        <Button x:Name="RegiterButton" Text="Register" HorizontalOptions="CenterAndExpand" TextColor="White" BackgroundColor="Blue" WidthRequest="100" Clicked="RegiterButton_Clicked"/>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

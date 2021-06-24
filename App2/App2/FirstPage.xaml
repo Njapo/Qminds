@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Qminds.FirstPage">
+    <StackLayout>
+        <Label Text="Login" TextColor="black" FontSize="24" FontAttributes="Bold" Margin="15" HorizontalOptions="Center" VerticalOptions="Center" Padding="0"/>
+        <Frame HeightRequest="200" WidthRequest="170"
+               BackgroundColor="white"
+               HasShadow="True" Margin="10" Padding="0"
+               HorizontalOptions="CenterAndExpand"
+               CornerRadius="10" >
+
+            <StackLayout BackgroundColor="Aqua">
+                <ImageButton Source="factory.png" Aspect="AspectFit" Clicked="megvineclicked"/>
+                <Label Text="მეღვინე" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium"/>
+            </StackLayout>
+        </Frame>
+        <Frame HeightRequest="200" WidthRequest="170"
+               BackgroundColor="white" Padding="0"
+               HasShadow="True" Margin="20"
+               HorizontalOptions="CenterAndExpand"
+               CornerRadius="10">
+            <StackLayout BackgroundColor="Aqua">
+                <ImageButton Source="wineglass.png" Aspect="AspectFit"/>
+                <Label Text="მომხმარებელი" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold" FontSize="Medium"/>
+            </StackLayout>
+
+        </Frame>
+    </StackLayout>
+</ContentPage>

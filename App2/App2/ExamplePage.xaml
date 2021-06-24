@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Qminds.ExamplePage"
+             xmlns:local="clr-namespace:Qminds"
+             >
+     
+    <ContentPage.Content>
+        <ScrollView>
+            <AbsoluteLayout BackgroundColor="Aqua">
+            <BoxView BackgroundColor="White" AbsoluteLayout.LayoutBounds="0,220,430,200"/>
+            <Image Source="LoginIcon.png" AbsoluteLayout.LayoutBounds="0.5,0.02,350,150" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Image Source="bell.png" AbsoluteLayout.LayoutBounds="0.22,0.198,40,40" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Label Text="Warning" TextColor="Black" FontSize="35" FontAttributes="Bold" HorizontalTextAlignment="Center" AbsoluteLayout.LayoutBounds="100,170,200,300"/>
+            <Label x:Name="NameEntry" Text="Name: " FontAttributes="Bold" HorizontalOptions="StartAndExpand" FontSize="Medium"     AbsoluteLayout.LayoutBounds="5,220,200,300"/>
+            <Label x:Name="DateEntry" Text="Date: " FontAttributes="Bold" HorizontalOptions="StartAndExpand" FontSize="Medium"     AbsoluteLayout.LayoutBounds="5,250,400,500"/>
+            <Label x:Name="TypeEntry" Text="Type: " FontAttributes="Bold" HorizontalOptions="StartAndExpand" FontSize="Medium"     AbsoluteLayout.LayoutBounds="5,280,200,300"/>
+            <Label x:Name="WineEntry" Text="Wine: " FontAttributes="Bold" HorizontalOptions="StartAndExpand" FontSize="Medium"     AbsoluteLayout.LayoutBounds="5,310,200,300"/>
+            <Label x:Name="GrapesEntry" Text="Grapes: " FontAttributes="Bold" HorizontalOptions="StartAndExpand" FontSize="Medium" AbsoluteLayout.LayoutBounds="5,340,200,300"/>
+            <Label x:Name="VolumeEntry" Text="Volume: " FontAttributes="Bold" HorizontalOptions="StartAndExpand" FontSize="Medium" AbsoluteLayout.LayoutBounds="5,370,200,300"/>
+            <Label x:Name="MassEntry" Text="Mass: " FontAttributes="Bold" HorizontalOptions="StartAndExpand" FontSize="Medium"     AbsoluteLayout.LayoutBounds="5,400,200,300"/>
+            <ProgressBar x:Name="progresbar" Progress="0.2" WidthRequest="300"  ProgressColor="Red"  AbsoluteLayout.LayoutBounds="40,308,300,300"/>
+            <Label x:Name="Totaltime" Text="" AbsoluteLayout.LayoutBounds="353,440,300,300" FontAttributes="Bold" FontSize="Medium" TextColor="Black"/>
+            <Label x:Name="PhLabel" Text="Ph" TextColor="Black" FontAttributes="Bold" FontSize="Large" AbsoluteLayout.LayoutBounds="5,487,300,300"/>
+            <Label x:Name="BXLabel" Text="BX" TextColor="Black" FontAttributes="Bold" FontSize="Large" AbsoluteLayout.LayoutBounds="5,517,300,300"/>
+            <Label x:Name="pLabel" Text="p" TextColor="Black" FontAttributes="Bold" FontSize="Large" AbsoluteLayout.LayoutBounds="5,547,300,300"/>
+            <Label x:Name="SO2Label" Text="SO2" TextColor="Black" FontAttributes="Bold" FontSize="Large" AbsoluteLayout.LayoutBounds="5,577,300,300"/>
+            <Label x:Name="AlLabel" Text="Al" TextColor="Black" FontAttributes="Bold" FontSize="Large" AbsoluteLayout.LayoutBounds="5,607,300,300"/>
+            
+                <Label x:Name="PhNowLabel" Text="as" TextColor="Black" FontAttributes="Bold" FontSize="Medium" AbsoluteLayout.LayoutBounds="75,490,300,300" />
+                <ProgressBar x:Name="Phprogressbar"  AbsoluteLayout.LayoutBounds="105,354,250,300"/>
+                <Label x:Name="Phtotaltime" Text="7" TextColor="Black" FontAttributes="Bold" FontSize="Medium" AbsoluteLayout.LayoutBounds="367,490,300,300"/>
+
+
+                <Label x:Name="BXNowLabel" Text="as" TextColor="Black" FontAttributes="Bold" FontSize="Medium" AbsoluteLayout.LayoutBounds="75,517,300,300" />
+                <ProgressBar x:Name="BXprogressbar" Progress="0.7" AbsoluteLayout.LayoutBounds="105,381,250,300"/>
+                <Label x:Name="BXTotalLabel" Text="100" TextColor="Black" FontAttributes="Bold" FontSize="Medium" AbsoluteLayout.LayoutBounds="367,517,300,300" />
+
+
+                <Label x:Name="pNowLabel" Text="aa" TextColor="Black" FontAttributes="Bold" FontSize="Medium" AbsoluteLayout.LayoutBounds="75,547,300,300"/>
+                <ProgressBar x:Name="pProgressbar" Progress="0.4" AbsoluteLayout.LayoutBounds="105,415,250,300"/>
+                <Label x:Name="pTotalLabel" Text="1.1" TextColor="Black" FontAttributes="Bold" FontSize="Medium" AbsoluteLayout.LayoutBounds="367,547,300,300"/>
+
+
+                <Label x:Name="SO2NowLabel" Text="as" TextColor="Black" FontAttributes="Bold" FontSize="Medium" AbsoluteLayout.LayoutBounds="75,579,300,300"/>
+                <ProgressBar x:Name="SO2progressbar" Progress="0.5" AbsoluteLayout.LayoutBounds="105,442,250,300" />
+                <Label x:Name="SO2TotalLabel" Text="100%" TextColor="Black" FontAttributes="Bold" FontSize="Medium" AbsoluteLayout.LayoutBounds="367,579,300,300" />
+
+
+                <Label x:Name="AlNowLabel" Text="as" TextColor="Black" FontAttributes="Bold" FontSize="Medium" AbsoluteLayout.LayoutBounds="75,610,300,300"/>
+                <ProgressBar x:Name="Alprogressbar" Progress="0.1" AbsoluteLayout.LayoutBounds="105,472,250,300"/>
+                <Label x:Name="AlTotalTime" TextColor="Black" Text="300" FontAttributes="Bold" FontSize="Medium" AbsoluteLayout.LayoutBounds="367,610,300,300"/>
+            
+            </AbsoluteLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
